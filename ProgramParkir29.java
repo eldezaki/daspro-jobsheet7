@@ -4,7 +4,7 @@ public class ProgramParkir29 {
         Scanner sc = new Scanner(System.in);
         int jenis, durasi, total = 0;
         do {
-            System.out.println("Masukkan jenis kendaraan:\n1. Mobil\n2. Motor\n0. Keluar\nPilihan Anda: ");
+            System.out.print("Masukkan jenis kendaraan:\n1. Mobil\n2. Motor\n0. Keluar\nPilihan Anda: ");
             jenis = sc.nextInt();
             if (jenis == 1 || jenis == 2) {
                 System.out.print("Masukkan durasi parkir (jam): ");
@@ -14,10 +14,10 @@ public class ProgramParkir29 {
                     System.out.println("Biaya: Rp 12500");
                 } else {
                     if (jenis == 1) {
-                        total += (long) durasi * 3000;
+                        total += durasi * 3000;
                         System.out.println("Biaya: Rp " + (durasi * 3000));
                     } else if (jenis == 2) {
-                        total += (long) durasi * 2000;
+                        total += durasi * 2000;
                         System.out.println("Biaya: Rp " + (durasi * 2000));
                     }
                 }
