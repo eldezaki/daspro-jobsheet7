@@ -2,9 +2,7 @@ import java.util.Scanner;
 public class ProgramParkir29 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int jenis, durasi;
-        long total = 0;
-
+        int jenis, durasi, total = 0;
         do {
             System.out.println("Masukkan jenis kendaraan:\n1. Mobil\n2. Motor\n0. Keluar\nPilihan Anda: ");
             jenis = sc.nextInt();
